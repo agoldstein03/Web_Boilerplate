@@ -18,7 +18,7 @@
   export let url = '';
 </script>
 
-<style global>
+<style lang="scss" global>
   html, body {
     position: relative;
     width: 100%;

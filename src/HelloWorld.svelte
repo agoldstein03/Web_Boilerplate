@@ -3,9 +3,12 @@
 	p Visit the #[a(href='https://svelte.dev/tutorial') Svelte tutorial] to learn how to build Svelte apps.
 	p Counter: {count}
 	button(on:click!="{() => {count++}}") Click to go from {count} to {countPlusOne}
+	Button(on:click!="{() => {alert('hello')}}") TESTING
 </template>
 
 <script>
+	import { Button } from 'attractions'
+
 	export let name;
 	let count = 0;
 	$: countPlusOne = count + 1;
